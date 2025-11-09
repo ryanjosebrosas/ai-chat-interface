@@ -61,10 +61,10 @@ npm install
 3. Set up environment variables:
 
 ```bash
-cp .env.local.example .env.local
+cp .env.example .env.local
 ```
 
-Edit `.env.local` with your actual credentials.
+Edit `.env.local` with your Azure OpenAI credentials.
 
 4. Run the development server:
 
@@ -79,21 +79,22 @@ npm run dev
 ```
 chat-interface/
 ├── app/                    # Next.js App Router
-│   ├── api/               # API routes
+│   ├── api/chat/          # Chat API endpoint
 │   ├── layout.tsx         # Root layout
 │   ├── page.tsx           # Main page
-│   └── globals.css        # Global styles
+│   └── globals.css        # Global styles with animations
 ├── components/            # React components
-│   ├── chat/             # Chat components
-│   ├── sidebar/          # Sidebar components
-│   ├── providers/        # Context providers
-│   └── ui/               # UI components
+│   ├── chat/             # Chat interface components
+│   ├── sidebar/          # Conversation sidebar
+│   ├── settings/         # Settings panel
+│   ├── providers/        # Theme provider
+│   └── ui/               # Reusable UI components
 ├── lib/                   # Utilities and configs
-│   ├── supabase/         # Supabase client
 │   ├── azure-openai/     # Azure OpenAI client
-│   ├── pydantic-ai/      # PydanticAI agents
+│   ├── storage/          # localStorage conversation management
 │   └── utils/            # Helper functions
-├── types/                 # TypeScript types
+├── types/                 # TypeScript type definitions
+├── screenshots/           # Project screenshots
 └── public/               # Static assets
 ```
 
