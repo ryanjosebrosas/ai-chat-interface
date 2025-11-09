@@ -1,6 +1,6 @@
 # AI Chat Interface
 
-Modern chat interface application built with Next.js 15, TypeScript, Azure OpenAI, Supabase, with advanced UX features.
+Modern chat interface application built with Next.js 15, TypeScript, and Azure OpenAI GPT-4o with advanced UX features.
 
 ## Screenshots
 
@@ -14,7 +14,7 @@ Modern chat interface application built with Next.js 15, TypeScript, Azure OpenA
 
 - 🤖 **Real-time AI Chat** powered by Azure OpenAI GPT-4o
 - 💬 **Markdown Rendering** with headers, bold text, lists, code blocks, and links
-- 💾 **Dual Storage System** - localStorage (primary) + Supabase (cloud backup)
+- 💾 **localStorage Storage** - Fast, client-side conversation persistence
 - 📚 **Conversation History** - Sidebar with all your chat sessions
 - 🎨 **Dark/Light Theme** toggle with high-contrast WCAG AAA design
 - ⚡ **Modern UX Features**:
@@ -33,18 +33,16 @@ Modern chat interface application built with Next.js 15, TypeScript, Azure OpenA
 - **Frontend**: Next.js 15 (App Router), React 18, TypeScript 5.6
 - **Styling**: Tailwind CSS 3.4 with custom animations
 - **AI/LLM**: Azure OpenAI GPT-4o API
-- **Database**: Supabase (PostgreSQL)
+- **Storage**: Browser localStorage for conversation persistence
 - **Markdown**: react-markdown with remark-gfm
-- **State Management**: React Hooks + localStorage
+- **State Management**: React Hooks
 
 ## Getting Started
 
 ### Prerequisites
 
 - Node.js 20+ and npm
-- Python 3.11+ (for PydanticAI agents)
-- Azure OpenAI account with API key
-- Supabase project
+- Azure OpenAI account with API key and deployment
 
 ### Installation
 
