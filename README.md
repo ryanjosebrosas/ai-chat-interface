@@ -1,24 +1,41 @@
 # AI Chat Interface
 
-Modern chat interface application built with Next.js 14+, TypeScript, CopilotKit, Azure OpenAI, Supabase, and PydanticAI.
+Modern chat interface application built with Next.js 15, TypeScript, Azure OpenAI, Supabase, with advanced UX features.
+
+## Screenshots
+
+### Dark Mode
+![AI Chat Interface - Dark Mode](./screenshots/chat-interface-dark.png)
+
+### Light Mode
+![AI Chat Interface - Light Mode](./screenshots/chat-interface-light.png)
 
 ## Features
 
-- Real-time chat interface powered by Azure OpenAI
-- Conversation history management with Supabase
-- Modern, responsive UI with Tailwind CSS
-- Dark mode support
-- PydanticAI for complex agent tasks
-- Streaming responses for better UX
+- 🤖 **Real-time AI Chat** powered by Azure OpenAI GPT-4o
+- 💬 **Markdown Rendering** with headers, bold text, lists, code blocks, and links
+- 💾 **Dual Storage System** - localStorage (primary) + Supabase (cloud backup)
+- 📚 **Conversation History** - Sidebar with all your chat sessions
+- 🎨 **Dark/Light Theme** toggle with high-contrast WCAG AAA design
+- ⚡ **Modern UX Features**:
+  - Typing indicator with animated dots
+  - Copy messages to clipboard
+  - Regenerate AI responses
+  - Scroll-to-bottom button
+  - Smooth message animations
+  - Auto-focus input field
+  - Keyboard shortcuts (Enter to send, Shift+Enter for new line, Esc to clear)
+  - Character limit with counter (4000 chars)
+- 📱 **Responsive Design** optimized for all screen sizes
 
 ## Tech Stack
 
-- **Frontend**: Next.js 15, React 18, TypeScript 5.6
-- **Styling**: Tailwind CSS 3.4
-- **UI Components**: CopilotKit 1.5
-- **AI/LLM**: Azure OpenAI, PydanticAI
-- **Backend/Database**: Supabase
-- **State Management**: React Query
+- **Frontend**: Next.js 15 (App Router), React 18, TypeScript 5.6
+- **Styling**: Tailwind CSS 3.4 with custom animations
+- **AI/LLM**: Azure OpenAI GPT-4o API
+- **Database**: Supabase (PostgreSQL)
+- **Markdown**: react-markdown with remark-gfm
+- **State Management**: React Hooks + localStorage
 
 ## Getting Started
 
